@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="6000"
+        motion:autoTransition="animateToEnd"
+        >
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/background"
+                motion:framePosition="70"
+                android:scaleY="1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/background"
+                motion:framePosition="100"
+                android:scaleY="10000" />
+            <KeyAttribute
+                motion:motionTarget="@+id/background"
+                motion:framePosition="0"
+                android:scaleY="1" />
+            <KeyAttribute />
+
+            <KeyAttribute
+                motion:motionTarget="@+id/logoDecisions"
+                motion:framePosition="0"
+                android:alpha="0"/>
+
+            <KeyAttribute
+                motion:motionTarget="@+id/logoDecisions"
+                motion:framePosition="80"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:alpha="0"/>
+
+            <KeyAttribute
+                motion:motionTarget="@+id/logoDecisions"
+                motion:framePosition="100"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:alpha="1"/>
+
+            <KeyAttribute
+                motion:motionTarget="@+id/logoDecisions"
+                motion:framePosition="100"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:alpha="1"/>
+
+
+            <KeyAttribute
+                motion:motionTarget="@+id/question_1"
+                motion:framePosition="10"
+                android:translationY="-30dp"
+                android:alpha="1"/>
+            <KeyAttribute
+                motion:motionTarget="@+id/question_1"
+                motion:framePosition="20"
+                android:translationY="0dp"
+                android:alpha="1"/>
+            <KeyAttribute
+                motion:motionTarget="@+id/question_1"
+                motion:framePosition="30"
+                android:translationY="-30dp"
+                android:alpha="1"/>
+            <KeyAttribute
+                motion:motionTarget="@+id/question_1"
+                motion:framePosition="40"
+                android:translationY="0dp"
+                android:alpha="1"/>
+            <KeyAttribute
+                motion:motionTarget="@+id/question_1"
+                motion:framePosition="50"
+                android:translationY="-30dp"
+                android:alpha="1"/>
+
+        </KeyFrameSet>
+
+    </Transition>
+
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="300dp"
+            android:layout_width="350dp"
+            android:id="@+id/question_1"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:alpha="0"/>
+        <Constraint
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/scenari"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            />
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/background" />
+        <Constraint
+            android:id="@+id/question_2"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp" />
+        <Constraint
+            android:id="@+id/title"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/brain"
+            android:layout_marginBottom="120dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="1px"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:id="@+id/background" />
+        <Constraint
+            android:id="@+id/title"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/title"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/brain"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="110dp"
+            motion:layout_constraintHorizontal_bias="1.0" />
+        <Constraint
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/question_1"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+
+    </ConstraintSet>
+</MotionScene>

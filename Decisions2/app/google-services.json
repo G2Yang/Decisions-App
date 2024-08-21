@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "821928132172",
+    "project_id": "multiplayertest-a054a",
+    "storage_bucket": "multiplayertest-a054a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821928132172:android:a1815a1672601b1e2abee9",
+        "android_client_info": {
+          "package_name": "org.proven.decisions2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821928132172-528b2gri72jhcesvoap5uhhda0k41lvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfJ5H8YekNETH-r7gOVrrUlDGy-_I9sRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821928132172-528b2gri72jhcesvoap5uhhda0k41lvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

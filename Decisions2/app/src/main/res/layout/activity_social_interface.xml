@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialInterface"
+    android:background="@color/dark_blue"
+    >
+
+
+    <include layout="@layout/post_layout"></include>
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_main"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/decision"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:maxLength="60"
+            android:paddingStart="60dp"
+            android:paddingEnd="60dp"
+            android:text="The Decision"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/footerButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btSettings"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/custom_settings_icon"
+                android:contentDescription="btSettings"></Button>
+
+            <Button
+                android:id="@+id/btDecisions"
+                android:layout_width="105dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/custom_decisions_icon"
+                android:contentDescription="buttonHome"></Button>
+
+            <Button
+                android:id="@+id/btFriends"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_friends_icon"
+                android:contentDescription="btFriends"
+
+                ></Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

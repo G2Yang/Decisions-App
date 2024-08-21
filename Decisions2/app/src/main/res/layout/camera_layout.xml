@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    >
+
+
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:backgroundTint="@color/translucent_dark_blue"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/logo_decisions"
+            android:tint="@color/white">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/buttonsCamera"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@drawable/footer"
+        android:backgroundTint="@color/translucent_dark_blue"
+        >
+
+        <Button
+            android:id="@+id/flash"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_flash">
+        </Button>
+
+        <Button
+            android:id="@+id/takePhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/custom_camera_icon">
+        </Button>
+
+        <Button
+            android:id="@+id/rotate_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_turn_camera">
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/quiz_animation_layout_scene"
+    android:background="@color/white">
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/question_1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/question_gif2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></pl.droidsonroids.gif.GifImageView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/brain"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/brain_gif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"></pl.droidsonroids.gif.GifImageView>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="@string/question_quiz"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_blue"
+        android:textSize="30sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/scenari"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/scenari_gif"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></pl.droidsonroids.gif.GifImageView>
+
+
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/medium_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></View>
+
+
+    <ImageView
+        android:id="@id/logoDecisions"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:foreground="@drawable/logo_decisions"
+        android:foregroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

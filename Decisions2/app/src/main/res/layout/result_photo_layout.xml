@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/bitmapResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ejemplo2"
+        ></ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+                android:text="@string/post_this_photo"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textAllCaps="true"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@drawable/footer2"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/footerButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btNo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/custom_cancel_icon"
+                android:contentDescription="btSettings">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btYes"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_yes_icon"
+                android:contentDescription="buttonHome"
+
+                ></Button>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
