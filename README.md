@@ -20,13 +20,11 @@
 - [✨ Overview](#-overview)
 - [🚀 Features](#-features)
 - [🛠️ Built With](#️-built-with)
-- [📸 Screenshots](#-screenshots)
 - [⚙️ Getting Started](#️-getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [📖 Usage](#-usage)
 - [🏗️ Project Structure](#️-project-structure)
-- [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 - [✉️ Contact](#️-contact)
 
@@ -77,27 +75,12 @@ The app demonstrates clean architecture, modern iOS development practices with *
 - **Design**: Figma (UI/UX prototyping)
 
 ### **Libraries & Dependencies**
-```swift
+```swift```
 
-📸 Screenshots
-<div align="center">
-Home Screen
-All your decision wheels in one place	Creating a List
-Easy addition of new options	The Decision Wheel
-Interactive spinning wheel
-https://via.placeholder.com/300x600/4A90E2/FFFFFF?text=Home+Screen	https://via.placeholder.com/300x600/50E3C2/FFFFFF?text=Create+List	https://via.placeholder.com/300x600/9013FE/FFFFFF?text=Decision+Wheel
-Wheel Customization
-Personalize colors and labels	History View
-Track past decisions	Settings
-App preferences and account
-https://via.placeholder.com/300x600/F5A623/FFFFFF?text=Customization	https://via.placeholder.com/300x600/7ED321/FFFFFF?text=History	https://via.placeholder.com/300x600/BD10E0/FFFFFF?text=Settings
-</div>
-🔧 Note: Replace placeholder images with actual screenshots from your app
-
-⚙️ Getting Started
+## ⚙️ Getting Started
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-Prerequisites
+## Prerequisites
 macOS: Sonoma (14.0) or later
 
 Xcode: 15.0 or later (download from Mac App Store)
@@ -108,7 +91,7 @@ Apple Developer Account (for physical device testing)
 
 Firebase Account (free tier available)
 
-Installation
+## Installation
 1. Clone the Repository
 bash
 git clone https://github.com/G2Yang/Decisions-App.git
@@ -159,7 +142,7 @@ Press ⌘ + R or click the Play button ▶️
 
 For first run, you might need to trust the developer in Settings → General → Device Management
 
-📖 Usage
+## 📖 Usage
 Basic Workflow
 Launch the app and sign in/create account
 
@@ -192,7 +175,8 @@ Shared Wheels: Collaborate with friends on group decisions
 
 Siri Shortcuts: "Hey Siri, decide what's for dinner"
 
-🏗️ Project Structure
+## 🏗️ Project Structure 
+```
 text
 Decisions-App/
 ├── Decisions/                    # Main app target
@@ -227,49 +211,8 @@ Decisions-App/
 ├── DecisionsTests/             # Unit tests
 ├── DecisionsUITests/           # UI tests
 └── README.md                   # This file
-🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-How to Contribute
-Fork the Project
-
-Create your Feature Branch
-
-bash
-git checkout -b feature/AmazingFeature
-Commit your Changes
-
-bash
-git commit -m 'Add some AmazingFeature'
-Push to the Branch
-
-bash
-git push origin feature/AmazingFeature
-Open a Pull Request
-
-Development Guidelines
-Follow Swift API Design Guidelines
-
-Write unit tests for new features
-
-Update documentation accordingly
-
-Use meaningful commit messages
-
-Ensure UI works in both light/dark modes
-
-Good First Issues
-Look for issues labeled good-first-issue if you're new to the project:
-
-Add new wheel animation presets
-
-Improve accessibility features
-
-Add localization support
-
-Create additional widget sizes
-
-📄 License
+```
+## 📄 License
 Distributed under the MIT License. See LICENSE file for more information.
 
 text
@@ -294,34 +237,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-✉️ Contact
+## ✉️ Contact
 Zhiyang Wu - iOS Developer
 
 GitHub: @G2Yang
 
 Email: yangtrabajos@gmail.com
-
-LinkedIn: Your LinkedIn Profile
-
-Twitter/X: @YourHandle
-
-Project Links:
-
-Repository: https://github.com/G2Yang/Decisions-App
-
-Issues: https://github.com/G2Yang/Decisions-App/issues
-
-Wiki: Project Wiki (optional)
-
-<div align="center">
-⭐ If you like this project, give it a star on GitHub!
-https://api.star-history.com/svg?repos=G2Yang/Decisions-App&type=Date
-
-Made with ❤️ and SwiftUI in Barcelona.
-
-</div> ```
-// Main dependencies used in the project
-- FirebaseFirestoreSwift  // Firestore with Codable support
-- FirebaseAuth            // Authentication
-- Lottie                  // Advanced animations (if used)
-- SwiftUICharts           // For statistics visualization
