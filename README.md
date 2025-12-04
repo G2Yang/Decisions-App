@@ -5,7 +5,7 @@
 ### An iOS app to make choices easier, developed with SwiftUI and Firebase.
 
 ![Swift](https://img.shields.io/badge/Swift-5.9-FA7343?logo=swift&logoColor=white)
-![Platform](https://img.shields.io/badge/platform-iOS-000000?logo=apple&logoColor=white)
+![Platform](https://img.shields.io/badge/platform-android-000000?logo=apple&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-Cloud%20Service-FFCA28?logo=firebase)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
