@@ -2,9 +2,8 @@
 
 # 🎯 Decisions App
 
-### An iOS app to make choices easier, developed with SwiftUI and Firebase.
+### An Android app to make choices easier, developed with Java and Firebase.
 
-![Swift](https://img.shields.io/badge/Swift-5.9-FA7343?logo=swift&logoColor=white)
 ![Platform](https://img.shields.io/badge/platform-android-000000?logo=apple&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-Cloud%20Service-FFCA28?logo=firebase)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -57,10 +56,8 @@ The app demonstrates clean architecture, modern iOS development practices with *
 ## 🛠️ Built With
 
 ### **Frontend**
-- **Language**: Swift 5.9
-- **UI Framework**: SwiftUI
+- **Language**:  Java
 - **Architecture**: MVVM (Model-View-ViewModel)
-- **Animations**: SwiftUI Animations + Custom Core Animation
 
 ### **Backend & Services**
 - **Database**: Firebase Firestore (NoSQL, real-time)
@@ -69,13 +66,9 @@ The app demonstrates clean architecture, modern iOS development practices with *
 - **Analytics**: Firebase Analytics
 
 ### **Development Tools**
-- **IDE**: Xcode 15+
-- **Dependency Management**: Swift Package Manager (SPM)
+- **IDE**: Android Studi
 - **Version Control**: Git + GitHub
 - **Design**: Figma (UI/UX prototyping)
-
-### **Libraries & Dependencies**
-```swift```
 
 ## ⚙️ Getting Started
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
@@ -175,43 +168,6 @@ Shared Wheels: Collaborate with friends on group decisions
 
 Siri Shortcuts: "Hey Siri, decide what's for dinner"
 
-## 🏗️ Project Structure 
-```
-text
-Decisions-App/
-├── Decisions/                    # Main app target
-│   ├── Models/                  # Data models
-│   │   ├── DecisionWheel.swift
-│   │   ├── Option.swift
-│   │   └── User.swift
-│   ├── ViewModels/              # Business logic
-│   │   ├── WheelViewModel.swift
-│   │   ├── AuthViewModel.swift
-│   │   └── HistoryViewModel.swift
-│   ├── Views/                   # SwiftUI Views
-│   │   ├── WheelView/
-│   │   │   ├── WheelView.swift
-│   │   │   ├── WheelComponent.swift
-│   │   │   └── SpinAnimation.swift
-│   │   ├── ListView/
-│   │   ├── AuthView/
-│   │   └── SettingsView/
-│   ├── Services/               # External services
-│   │   ├── FirebaseService.swift
-│   │   ├── AuthService.swift
-│   │   └── StorageService.swift
-│   ├── Utilities/              # Helpers & extensions
-│   │   ├── Extensions/
-│   │   ├── Constants.swift
-│   │   └── ColorPalette.swift
-│   └── Resources/              # Assets, etc.
-│       ├── Assets.xcassets
-│       ├── Preview Content/
-│       └── GoogleService-Info.plist
-├── DecisionsTests/             # Unit tests
-├── DecisionsUITests/           # UI tests
-└── README.md                   # This file
-```
 ## 📄 License
 Distributed under the MIT License. See LICENSE file for more information.
 
@@ -238,7 +194,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ## ✉️ Contact
-Zhiyang Wu - iOS Developer
+Zhiyang Wu, Ismael, Cege - Movile Developer
 
 GitHub: @G2Yang
 
